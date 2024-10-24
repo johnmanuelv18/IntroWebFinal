@@ -1,0 +1,154 @@
+.tracking-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background-color: #f7eeee;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tracking-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fe5275;
+    margin-bottom: 30px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    gap: 0;
+}
+
+.tab {
+    flex: 1;
+    font-size: 16px;
+    color: #F05C7A;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+}
+
+.tab:hover,
+.tab.active {
+    color: #F05C7A;
+    border-bottom: 2px solid rgb(167, 89, 103);
+}
+
+.tracking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tracking-form input[type="text"],
+.tracking-form input[type="email"] {
+    padding: 15px;
+    border: 1px solid #F05C7A;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #5a3e30;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tracking-form button {
+    background-color: #F05C7A;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 100%;
+}
+
+.tracking-form button:hover {
+    background-color: #cf546c;
+}
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+    .tracking-container {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 30px 15px;
+    }
+
+    .tracking-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .tab {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    .tracking-form {
+        gap: 15px;
+    }
+
+    .tracking-form input[type="text"],
+    .tracking-form input[type="email"] {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .tracking-form button {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile Styles (480px and below) */
+@media screen and (max-width: 480px) {
+    .tracking-container {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 20px 10px;
+    }
+
+    .tracking-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .tabs {
+        margin: 0 -10px 20px -10px; /* Negative margin to allow tabs to stretch edge-to-edge */
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 8px 5px;
+    }
+
+    .tracking-form {
+        gap: 12px;
+    }
+
+    .tracking-form input[type="text"],
+    .tracking-form input[type="email"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .tracking-form button {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}

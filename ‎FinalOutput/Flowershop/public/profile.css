@@ -1,0 +1,100 @@
+.login-container {
+    max-width: 400px;
+    margin: 60px auto 25px; 
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    color: #6a222f;
+}
+
+.login-title {
+    font-family: "Arial", serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #b84e63; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+header + .login-container {
+    flex: 1; /* Takes up the remaining space to push the footer down */
+}
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    margin-top: .5em;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c13f59; 
+    border-radius: 4px;
+    font-size: 1em;
+    color: #6a222f; 
+    background-color: #fff; 
+}
+
+.login-form input::placeholder {
+    color: #888; 
+    opacity: 1;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #666; 
+}
+
+/* Forgot password link */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 0.8em;
+    color: #6a222f; /* Dark text color */
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c13f59; 
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #95243b;
+}
+
+.login-form button:active {
+    background-color: #95243b; 
+}
+
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link p {
+    color: #6a222f; 
+}
+
+.signup-link a {
+    color: #c13f59;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+

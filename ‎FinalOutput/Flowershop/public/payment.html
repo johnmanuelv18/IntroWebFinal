@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper"> 
+
+        <header>
+            <div class="container">
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="FLOWERS_HOME.html">
+                        <img src="logo3.png" alt="Flori Logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="FLOWERS_HOME.html">Home</a></li>
+                        <li><a href="PRODUCTS.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <a href="profile.html"><i class="fa-regular fa-user"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="FLOWERS_HOME.html">Home</a></li>
+                    <li><a href="PRODUCTS.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="checkout-container"> <!-- Content container -->
+            <div class="payment-methods">
+                <h2>Payment Methods</h2>
+                <div class="payment-option">
+                    <input type="radio" id="pay-on-delivery" name="payment" checked>
+                    <label for="pay-on-delivery">
+                        <span class="circle"></span>
+                        Pay on Delivery
+                        <p>Pay with cash on delivery</p>
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="credit-debit-card" name="payment">
+                    <label for="credit-debit-card">
+                        <span class="circle"></span>
+                        Credit/Debit Cards
+                        <p>Pay with your Credit / Debit Card</p>
+                        <div class="card-icons">
+                            <img src="bdo.jpeg" alt="Bdo">
+                            <img src="master.png" alt="MasterCard">
+                            <img src="bpi.png" alt="Bpi">
+                        </div>
+                    </label>
+                </div>
+
+                <div id="card-inputs" class="card-inputs" style="display: none;">
+                    <div class="input-field">
+                        <input type="text" placeholder="Card number" required>
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-field">
+                            <input type="text" placeholder="MM / YY" required>
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="CVV" required>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Review your cart</h3>
+                <div class="cart-items">
+                </div>
+                <div class="discount">
+                    <input type="text" id="discount-code" placeholder="Discount code (ILOVEIWEB)">
+                    <button id="apply-discount">Apply</button>
+                </div>
+
+                <div class="summary">
+                </div>
+                <button class="pay-now">Pay Now</button>
+                <p class="secure-checkout">🔒 Secure Checkout </p>
+                <p class="secure-checkout">Ensuring your financial and personal details are secure on every transaction.</p>
+            </div>
+        </div>
+
+    </div> 
+
+    <script src="payment.js"></script> <!-- External JavaScript Link -->
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section brand-info">
+            <h3>The Blooms Nature Intended</h3>
+            <p>At Flori Flower Shop, we believe in the pure beauty of nature. That's why our arrangements are crafted using only the freshest flowers.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Product</h3>
+            <ul>
+                <li><a href="products.html">All Products</a></li>
+                <li><a href="tulips.html">Birthdays</a></li>
+                <li><a href="wed.html">Weddings</a></li>
+                <li><a href="holy.html">Holidays</a></li>
+                <li><a href="congratulations.html">Congratulations</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="contact.html#faq-section">FAQS</a></li>
+                <li><a href="contact.html#email-forms">Email Forms</a></li>
+                <li><a href="contact.html#customer-support">Customer Support</a></li>
+                <li><a href="About.html">Our Story</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Blog</h3>
+            <ul>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="track.html">Track through Number</a></li>
+                <li><a href="order.html">Track through Order</a></li>
+                <li><a href="profile.html">Manage Profiles</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Connect with us</h3>
+            <p>Email: info@flori.com</p>
+            <p>Contact: +63 998 166 7570</p>
+            <p>Main: 108 Aguirre Ave. BF Homes, Angeles City, Pampanga</p>
+            <p>Cebu: Unit 25 The Rivergate Bldg., Los Angeles, CA</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

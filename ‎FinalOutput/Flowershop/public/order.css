@@ -1,0 +1,73 @@
+.tracking-title {
+    font-size: 26px;
+    font-weight: 600; 
+    color: #F05C7A; 
+    margin-bottom: 30px; 
+    text-align: center; 
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; 
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    font-size: 16px; 
+    color: #F05C7A;
+    padding: 10px 20px; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.tab:hover, .tab.active {
+    color: #F05C7A;
+    border-bottom: 2px solid rgb(167, 89, 103); 
+}
+
+.tracking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.tracking-form input[type="text"],
+.tracking-form input[type="email"] {
+    padding: 15px; 
+    border: 1px solid #F05C7A; 
+    border-radius: 5px;
+    font-size: 16px;
+    color: #5a3e30;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tracking-form input::placeholder {
+    color: #999;
+}
+
+.tracking-form button {
+    background-color: #F05C7A; 
+    color: white;
+    padding: 15px 20px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; 
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.tracking-form button:hover {
+    background-color: #cf546c;
+}
