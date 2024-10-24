@@ -1,0 +1,989 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #E77A8F;
+    padding: 20px 0;
+    border-bottom: 2px solid #E77A8F;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+ 
+
+.logo img {
+    height: 50px;
+    width: 6em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #6a222f;
+}
+
+/* Styles for the icons */
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #6a222f;
+}
+
+/* Ensure Icons are Vertically Centered */
+header .icons a i {
+    vertical-align: middle;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-image: url('backgroundpo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 20px;  /* Increase padding to make the banner bigger */
+    color: #6a222f;
+    min-height: 600px; /* Ensure the banner is tall enough */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner .hero-text h1 {
+    font-size: 120px; /* Increase font size */
+    color: #F05C7A;
+    margin-bottom: 20px;
+    font-family: "Sofia", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hero-banner .hero-text p {
+    font-size: 30px; /* Increase font size */
+    color: #6a222f;
+    margin-top: -1.5em; /* Reduced margin to make the space smaller */
+    margin-bottom: 30px; /* Keep the existing margin for space between the paragraph and the button */   
+     font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.cta-btn {
+    background-color: #F05C7A;
+    color: #fff;
+    margin-top: -1em; /* Reduced margin to make the space smaller */
+
+    padding: 15px 40px; /* Adjust padding for bigger button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px; /* Increase font size for the button */
+}
+
+.cta-btn:hover {
+    background-color: #a32948;
+}
+
+/*END OF HEADER*/
+/* Offers Section */
+.offers-section {
+    padding: 40px 0; /* Remove padding on the sides */
+    background-color: #f7eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.offer-container {
+    display: flex;
+    gap: 20px;
+    width: 200%; /* Make the container full-width */
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px; /* Optional: limit the max width */
+}
+
+.offer-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.offer-item a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.offer-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.offer-item:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* General Content Section */
+.content-section {
+    padding: 40px 0;
+    background-color: #fff;
+    padding-top: 10em;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-content h3 span {
+    font-family: 'Cursive', sans-serif;
+    color: #F05C7A; /* Example color for the cursive text */
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #6a222f;
+}
+
+.cta-btn {
+    background-color: #D04A6B;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Ensure the image is on the left and text is on the right */
+.content-item.reverse {
+    flex-direction: row;
+    text-align: left;
+}
+
+/* Featured Products Section */
+.featured-products {
+    text-align: center;
+    padding: 40px 20px; /* Ensure some padding on the left and right for space */
+    background-color: #fff;
+}
+
+.featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.featured-products h2 span {
+    display: block;
+    font-family: 'Cursive', sans-serif;
+    color: #F05C7A;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Further reduce gap between items */
+    padding: 0 11px; /* Add some padding on the left and right margin */
+
+    
+}
+
+.product-item {
+    flex: 1;
+    max-width: 350px; /* Increase max width to make the items bigger */
+    text-align: center;
+    position: relative;
+}
+
+.product-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+
+}
+
+.product-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #F05C7A;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.product-details h3 {
+    font-size: 20px; /* Increase font size to accommodate larger images */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #F05C7A;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    margin-right: 3px;
+}
+
+.price {
+    font-size: 18px; /* Slightly increase price font size */
+}
+
+.current-price {
+    font-weight: bold;
+    color: #6a222f;
+    margin-right: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+
+
+
+
+.deal-of-the-day-section {
+    text-align: center;
+    background-image: url('dealbg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 20px; /* Adjust padding to fit the content */
+    color: #6a222f;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -100px; /* Pulls the product section up */
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 120px 20px 20px 20px; /* Padding around products */
+    background-color: #fff; /* White background for products */
+    position: relative;
+    z-index: 2; /* Ensure this section is on top */
+    margin-top: 0px; /* Ensures this section overlaps */
+    border-radius: 0 0 15px 15px; /* Round corners for the white section */
+}
+
+
+
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 23%; /* Adjust the width to fit 4 products in one row */
+    padding: 20px;
+    position: relative;
+    margin: 0 auto; /* Center the product cards */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Maintain the slight shadow */
+
+
+}
+
+.deal-of-the-day-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #6a222f;
+}
+
+
+.product-section {
+    padding: 0 20px; /* Padding for the product section */
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 153px; /* Further increased padding for a longer box */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.time-box span {
+    font-size: 48px;
+    color: #6a222f;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.label {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.separator {
+    font-size: 48px;
+    color: #6a222f;
+    margin: 0 15px; /* Increased margin for a wider spacing */
+    line-height: 1;
+    position: relative;
+    top: -8px; /* Align the colons vertically with the numbers */
+}
+
+.deal-of-the-day-section {
+    text-align: center;
+    background-image: url('dealbg.jpg'); /* Replace with your image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 20px; /* Adjust padding to fit the content */
+    color: #6a222f;
+    position: relative;
+    margin-bottom: -100px;
+}
+
+.deal-of-the-day-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #F05C7A; /* Updated color */
+}
+
+
+.product-container {
+    display: flex;
+    justify-content: space-around; /* Adjusts the space between the products */
+    flex-wrap: wrap; /* Ensures that products will wrap if they don't fit in one row */
+    gap: 20px; /* Space between each product */
+    padding: 0 20px;
+}
+
+
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #F05C7A; /* Your theme color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+.product-card h3 {
+    font-size: 18px;
+    color: #6a222f;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: #6a222f;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+
+/* Ensure prices are on one line and color them black */
+.product-card .price, 
+.product-card .discounted-price {
+    display: inline-block;
+    font-size: 18px; /* Set a consistent font size for both prices */
+    color: #6a222f; /* Black color for prices */
+    text-decoration: line-through; /* Only for the original price */
+    margin-right: 10px; /* Space between original and discounted price */
+}
+
+
+
+.product-card .discounted-price {
+    color: #6a222f; /* Black color for the discounted price as well */
+    text-decoration: none; /* Remove line-through for discounted price */
+    font-weight: bold;
+}
+
+
+.product-card .stars {
+    color: #F05C7A; /* Theme color for the stars */
+    margin-bottom: 10px; /* Space between stars and price */
+    font-size: 16px; /* Adjust font size if needed */
+}
+.product-card .cta-btn {
+    background-color: #F05C7A; /* Your theme color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: .6em;
+}
+
+.product-card .cta-btn:hover {
+    background-color: #e04a67; /* Slightly darker shade */
+}
+
+
+
+/* Featured Cookie Occasions Section */
+.featured-cookies-section {
+    background-color: #fff; /* Follow your theme */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-cookies-section h2 {
+    padding-top: 2em;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #6a222f;
+}
+/* Ensure the cookie items match the product item sizing and gap */
+.cookie-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Match the gap with the product items */
+    padding: 0 11px; /* Similar padding as the product container */
+}
+.cookie-item {
+    background-color: #fff; /* White background for the cookie boxes */
+    border-radius: 8px;
+    padding: 20px;
+    width: 23%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    margin: 0 auto; /* Center the items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cookie-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cookie-item h3 {
+    font-size: 18px;
+    color:#da4e6a;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cookie-item p {
+    font-size: 14px;
+    color: #6a222f;
+    margin-top: 5px;
+}
+
+/* Hover effect remains the same */
+.cookie-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.customer-reviews {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f7eeee; /* Updated to match your theme's background color */
+}
+
+.customer-reviews h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #6a222f; /* This remains as a neutral, readable color */
+}
+
+.review-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensure boxes stretch to the same height */
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    flex: 1;
+}
+
+.review-box {
+    background-color: #F05C7A; /* Updated to match your theme's primary color */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* This makes the review-box take up equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the content is evenly spaced */
+}
+
+.review-rating {
+    font-size: 18px;
+    color: #f4e4e7; /* Keeps the star color as yellow for contrast */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.review-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify; /* Justify the text */
+    margin-bottom: 0;
+}
+
+.reviewer-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -15px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-info {
+    font-size: 14px;
+}
+
+.reviewer-info span {
+    display: block;
+    font-weight: bold;
+    color: #F05C7A; /* Match the theme's primary color */
+}
+
+.reviewer-info small {
+    color: #888;
+    margin-left: -1.7em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.faq-section {
+    padding: 20px;
+    padding-bottom: 5em;
+    background-color: #fff; /* Update background to match theme */
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding-top: 1em;
+    text-align: center;
+    color: #6a222f; /* Keep the heading color neutral */
+}
+
+.faq-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #F05C7A; /* Update to match theme's primary color */
+    text-align: center;
+}
+
+/* FAQ answer text */
+.faq-answer p {
+    color: #6a222f; /* Neutral black color for readability */
+    text-align: justify;
+}
+
+/* FAQ item styling */
+.faq-item {
+    border-bottom: 1px solid #F05C7A; /* Update border color to theme's primary color */
+    padding: 15px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    color: #6a222f; /* Neutral color for question text */
+    margin: 0;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    color: #F05C7A; /* Update to match theme's primary color */
+}
+
+.faq-answer {
+    display: none;
+    font-size: 16px;
+    color: #6a222f; /* Neutral color for answer text */
+    margin-top: 10px;
+}
+
+/* Show the answer when active */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Rotate the toggle icon on expansion */
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg); /* Change '+' to '−' when expanded */
+}
+
+
+
+footer {
+    background-color: #c74660; /* Black background */
+    color: #fff; /* White text */
+    padding: 40px 20px; /* Padding around the footer */
+    font-size: 14px; /* General font size */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer container */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.footer-section {
+    flex: 1; /* Ensure sections take equal space */
+    margin-right: 20px;
+    margin-bottom: 20px; /* Space between rows on smaller screens */
+}
+
+.footer-section h3 {
+    font-size: 18px; /* Slightly larger font for headings */
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #d4c2bf; /* Color on hover */
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    color: #fff; /* White icon color */
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d14b36; /* Change icon color on hover */
+}
+
+/* Tablet Optimization for 768px */
+@media (max-width: 768px) {
+    .offers-section {
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+    }
+ 
+    .offer-container {
+        width: 95%;
+        max-width: 768px; /* Stretch to tablet width */
+        display: flex;
+        gap: 10px; /* Adjust gap between images */
+        justify-content: space-around; /* Space items evenly */
+        margin: 0 auto;
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+ 
+    .offer-item {
+        width: 48%; /* Two items per row */
+        height: auto; /* Maintain aspect ratio */
+        max-width: none; /* Ensure it stretches evenly */
+        border-radius: 8px;
+    }
+ 
+    .offer-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+ 
+/* Optimized Tablet View - iPad Pro */
+@media (max-width: 1024px) {
+    .offers-section {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .offer-container {
+        width: 90%; /* Stretch to fit most of the screen */
+        max-width: 900px; /* Optimized width for iPad Pro */
+        display: flex;
+        flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+        justify-content: space-between; /* Even spacing */
+        gap: 16px; /* Adjust spacing between items */
+        margin: 0 auto;
+    }
+ 
+    .offer-item {
+        flex: 1 1 calc(33% - 16px); /* Three items per row with gaps */
+        max-width: calc(33% - 16px); /* Maintain even layout */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px;
+    }
+ 
+    .offer-item img {
+        width: 100%;
+        height: 100%; /* Stretch to container */
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+ 
+/* iPad Landscape Mode (Optional) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .offer-container {
+        gap: 12px; /* Slightly smaller gaps in landscape */
+    }
+ 
+    .offer-item {
+        flex: 1 1 calc(48% - 12px); /* Two items per row */
+    }
+}
+
+
+/* Add this to your CSS file to style the links */
+.cookie-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.cookie-link:hover {
+    color: #F05C7A; /* Optional: change color on hover to match theme */
+}
+
+/* To ensure the h3 tags maintain their style */
+.cookie-item h3 a {
+    color: #F05C7A; /* Maintain the theme color */
+    font-weight: bold; /* Keep the font bold */
+}
+
+.cookie-item h3 a:hover {
+    color: #F05C7A; /* Optional: change color on hover */
+}
+
+
+/* Apply Roboto Slab font to specific headings */
+.featured-products h2,
+.deal-of-the-day-section h2,
+.featured-cookies-section h2,
+.customer-reviews h2 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* Adjust weight to match the desired style */
+    color: #6a222f; /* Ensure the text color is consistent */
+}
+
+/* Ensure the span within FEATURED PRODUCTS also inherits the same font */
+.featured-products h2 span {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600; /* Adjust weight to match the desired style */
+    color: #F05C7A; /* Optional: Color for the span */
+}
+
+/* Additional styling for specific sections if needed */
+.featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #6a222f; /* Ensure consistent color */
+}
+
+.deal-of-the-day-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #F05C7A; /* Optional: Update to match theme */
+}
+
+.featured-cookies-section h2 {
+    padding-top: 2em;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #6a222f;
+}
+
+.customer-reviews h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #6a222f;
+}
+
