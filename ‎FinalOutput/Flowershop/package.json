@@ -1,0 +1,24 @@
+{
+  "name": "flowershop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "crypto": "^1.0.1",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.0",
+    "flowershop": "file:",
+    "mongoose": "^8.7.2",
+    "nodemailer": "^6.9.15",
+    "uuid": "^10.0.0"
+  }
+}
