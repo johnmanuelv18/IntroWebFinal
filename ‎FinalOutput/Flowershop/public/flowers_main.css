@@ -1,0 +1,827 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #E77A8F;
+    padding: 20px 0;
+    border-bottom: 2px solid #E77A8F;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+ 
+
+.logo img {
+    height: 50px;
+    width: 6em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #6a222f;
+}
+
+/* Styles for the icons */
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #6a222f;
+}
+
+/* Ensure Icons are Vertically Centered */
+header .icons a i {
+    vertical-align: middle;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-image: url('backgroundpo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 20px;  /* Increase padding to make the banner bigger */
+    color: #6a222f;
+    min-height: 600px; /* Ensure the banner is tall enough */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner .hero-text h1 {
+    font-size: 120px; /* Increase font size */
+    color: #F05C7A;
+    margin-bottom: 20px;
+    font-family: "Sofia", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hero-banner .hero-text p {
+    font-size: 30px; /* Increase font size */
+    color: #6a222f;
+    margin-top: -1.5em; /* Reduced margin to make the space smaller */
+    margin-bottom: 30px; /* Keep the existing margin for space between the paragraph and the button */   
+     font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.cta-btn {
+    background-color: #F05C7A;
+    color: #fff;
+    margin-top: -1em; /* Reduced margin to make the space smaller */
+
+    padding: 15px 40px; /* Adjust padding for bigger button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px; /* Increase font size for the button */
+}
+
+.cta-btn:hover {
+    background-color: #a32948;
+}
+
+/*END OF HEADER*/
+/* Offers Section */
+.offers-section {
+    padding: 40px 0; 
+    background-color: #f7eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.offer-container {
+    display: flex;
+    gap: 20px;
+    width: 200%; /* Make the container full-width */
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px; /* Optional: limit the max width */
+}
+
+.offer-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.offer-item a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.offer-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.offer-item:hover img {
+    transform: scale(1.05); 
+}
+
+/* General Content Section */
+.content-section {
+    padding: 40px 0;
+    background-color: #fff;
+    padding-top: 10em;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-content h3 span {
+    font-family: 'Cursive', sans-serif;
+    color: #F05C7A; 
+}
+
+.text-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #6a222f;
+}
+
+.cta-btn {
+    background-color: #D04A6B;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content-item.reverse {
+    flex-direction: row;
+    text-align: left;
+}
+
+.featured-products {
+    text-align: center;
+    padding: 40px 20px; 
+    background-color: #fff;
+}
+
+.featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.featured-products h2 span {
+    display: block;
+    font-family: 'Cursive', sans-serif;
+    color: #F05C7A;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding: 0 11px;
+    
+}
+
+.product-item {
+    flex: 1;
+    max-width: 350px; 
+    text-align: center;
+    position: relative;
+}
+
+.product-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.product-image img:hover {
+    transform: scale(1.05); 
+}
+
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #F05C7A;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.product-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #F05C7A;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    margin-right: 3px;
+}
+
+.price {
+    font-size: 18px; 
+}
+
+.current-price {
+    font-weight: bold;
+    color: #6a222f;
+    margin-right: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+.deal-of-the-day-section {
+    text-align: center;
+    background-image: url('dealbg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 20px; 
+    color: #6a222f;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0px; 
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 120px 20px 20px 20px;
+    background-color: #fff; 
+    position: relative;
+    z-index: 2; 
+    margin-top: 0px; 
+    border-radius: 0 0 15px 15px; 
+}
+
+
+
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 23%; 
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+
+
+}
+
+.deal-of-the-day-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #6a222f;
+}
+
+
+.product-section {
+    padding: 0 20px; 
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 153px; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.time-box span {
+    font-size: 48px;
+    color: #6a222f;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.label {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.separator {
+    font-size: 48px;
+    color: #6a222f;
+    margin: 0 15px; 
+    line-height: 1;
+    position: relative;
+    top: -8px; 
+}
+
+
+.deal-of-the-day-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #F05C7A; /* Updated color */
+}
+
+
+.product-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 0 20px;
+}
+
+
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #F05C7A;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+.product-card h3 {
+    font-size: 18px;
+    color: #6a222f;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: #6a222f;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+
+.product-card .price, 
+.product-card .discounted-price {
+    display: inline-block;
+    font-size: 18px; 
+    color: #6a222f; 
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+
+
+.product-card .discounted-price {
+    color: #6a222f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.product-card .stars {
+    color: #F05C7A; 
+    margin-bottom: 10px; 
+    font-size: 16px; 
+}
+.product-card .cta-btn {
+    background-color: #F05C7A; 
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: .6em;
+}
+
+.product-card .cta-btn:hover {
+    background-color: #e04a67; 
+}
+
+
+
+.featured-cookies-section {
+    background-color: #fff; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-cookies-section h2 {
+    padding-top: 2em;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #6a222f;
+}
+.cookie-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding: 0 11px; 
+}
+.cookie-item {
+    background-color: #fff; 
+    border-radius: 8px;
+    padding: 20px;
+    width: 23%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cookie-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cookie-item h3 {
+    font-size: 18px;
+    color:#da4e6a;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cookie-item p {
+    font-size: 14px;
+    color: #6a222f;
+    margin-top: 5px;
+}
+
+.cookie-item:hover {
+    transform: scale(1.05); 
+}
+
+.customer-reviews {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f7eeee; 
+}
+
+.customer-reviews h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #6a222f; 
+}
+
+.review-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch; /* Ensure boxes stretch to the same height */
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    flex: 1;
+}
+
+.review-box {
+    background-color: #F05C7A;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-rating {
+    font-size: 18px;
+    color: #f4e4e7; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.review-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify; 
+    margin-bottom: 0;
+}
+
+.reviewer-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -15px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-info {
+    font-size: 14px;
+}
+
+.reviewer-info span {
+    display: block;
+    font-weight: bold;
+    color: #F05C7A; 
+}
+
+.reviewer-info small {
+    color: #888;
+    margin-left: -1.7em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.faq-section {
+    padding: 20px;
+    padding-bottom: 5em;
+    background-color: #fff; 
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding-top: 1em;
+    text-align: center;
+    color: #6a222f;
+}
+
+.faq-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #F05C7A; 
+    text-align: center;
+}
+
+/* FAQ answer text */
+.faq-answer p {
+    color: #6a222f;
+    text-align: justify;
+}
+
+.faq-item {
+    border-bottom: 1px solid #F05C7A;
+    padding: 15px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    color: #6a222f; 
+    margin: 0;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    color: #F05C7A; 
+}
+
+.faq-answer {
+    display: none;
+    font-size: 16px;
+    color: #6a222f; 
+    margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .toggle-icon {
+    transform: rotate(45deg); /* Change '+' to '−' when expanded */
+}
+
+
+
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 100%; 
+    }
+}
+
+
+.cookie-link {
+    text-decoration: none; 
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.cookie-link:hover {
+    color: #F05C7A; 
+}
+
+.cookie-item h3 a {
+    color: #F05C7A; 
+    font-weight: bold; 
+}
+
+.cookie-item h3 a:hover {
+    color: #F05C7A; 
+}
+
+
+.featured-products h2,
+.deal-of-the-day-section h2,
+.featured-cookies-section h2,
+.customer-reviews h2 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600; 
+    color: #6a222f; 
+}
+
+.featured-products h2 span {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600; 
+    color: #F05C7A; 
+}
+
+.featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #6a222f; 
+}
+
+.deal-of-the-day-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #F05C7A; 
+}
+
+.featured-cookies-section h2 {
+    padding-top: 2em;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #6a222f;
+}
+
+.customer-reviews h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #6a222f;
+}
+

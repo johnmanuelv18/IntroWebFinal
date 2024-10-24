@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Flowers</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="FLOWERS_HOME.html">
+                    <img src="logo3.png" alt="Flori Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="FLOWERS_HOME.html">Home</a></li>
+                    <li><a href="PRODUCTS.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="profile.html"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="FLOWERS_HOME.html">Home</a></li>
+                <li><a href="PRODUCTS.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h1>Blossom Holidays</h1>
+                <p>Make this holiday season truly memorable with our exquisite collection of festive flowers. From cheerful poinsettias to elegant winter whites, our holiday arrangements are designed to spread joy and warmth. Whether you're decorating your home or sending love to someone special.</p>
+                <a href="holy.html" class="cta-btn">Shop Now</a>
+            </div>
+        </section>
+
+        <div class="main-container">
+            <!-- Left Nav -->
+            <div class="left-nav">
+                <h3>Gift Treats</h3>
+                <ul>
+                    <li><a href="products.html">Florist's Specials</a></li>
+                    <li><a href="bouquets.html">Bouquets</a></li>
+                    <li><a href="roses.html">Just Roses</a></li>
+                    <li><a href="tulips.html">Delphiniums</a></li>
+                    <li><a href="wed.html">Weddings</a></li>
+                    <li><a href="birth.html">Birthdays</a></li>
+                    <li class="active"><a href="holy.html">Holidays</a></li> <!-- Add class 'active' here -->
+                    <li><a href="congratulations.html">Congratulations</a></li>
+                </ul>
+            </div>
+        
+            <div class="content-area">
+                <div class="filter-sort-container">
+                    <div class="filter">
+                        <label for="filter" class="filter-label">Filter By:</label>
+                        <button class="dropdown-button" onclick="toggleDropdown('filter-dropdown')">Occasion &#9662;</button>
+                        <div id="filter-dropdown" class="dropdown-content">
+                            <a href="birth.html">Birthdays (12)</a>
+                            <a href="holy.html">Holidays (6)</a>
+                            <a href="wed.html">White Events (6)</a>
+                            <a href="congratulations.html">Celebration (6)</a>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="product-grid">
+                    <!-- First row of products -->
+                    <div class="gift-item">
+                        <div class="sale-badge">Sale &#9889;</div>
+                        <a href="ho1.html"><img src="ho1.jpeg" alt="Happy Birthday Cookie Cake"></a>
+                        <p class="sale-text">Celebration Sale 20% Off!</p>
+                        <h3><a href="ho1.html">Hilda</a></h3>
+                        <p class="price"><span class="old-price">$64.99</span> $35.99</p>
+                        <div class="rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9733; (43)
+                        </div>
+                    </div>
+                    
+                    <div class="gift-item">
+                        <div class="sale-badge">Sale &#9889;</div>
+                        <a href="ho2.html"><img src="ho2.jpeg" alt="Signature Dozen"></a>
+                        <p class="sale-text">Celebration Sale 20% Off!</p>
+                        <h3><a href="ho2.html">Bailey</a></h3>
+                        <p class="price">$68.99<span class="old-price"></span></p>
+                        <div class="rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9734; (83)
+                        </div>
+                    </div>
+                    
+                    <div class="gift-item">
+                        <a href="ho3.html"><img src="ho3.jpeg" alt="Sweet Sampler Basket"></a>
+                        <h3><a href="ho3.html">Manhattan</a></h3>
+                        <p class="price">$58.99</p>
+                        <div class="rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9733; (19)
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second row of products -->
+                <div class="product-grid">
+                    <div class="gift-item">
+                        <a href="ho4.html"><img src="ho4.jpeg" alt="New Product 1"></a>
+                        <p class="sale-text">Anniversary Discount!</p>
+                        <h3><a href="ho4.html">Hawke</a></h3>
+                        <p class="price"><span class="old-price">$79.99</span> $64.99</p>
+                        <div class="rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9733; (20)
+                        </div>
+                    </div>
+                
+                    <div class="gift-item">
+                        <a href="ho5.html"><img src="ho5.jpeg" alt="New Product 2"></a>
+                        <h3><a href="ho5.html">Gangnam St.</a></h3>
+                        <p class="price">$58.99</p>
+                        <div class="rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9734; (15)
+                        </div>
+                    </div>
+                
+                    <div class="gift-item">
+                        <div class="sale-badge">Sale &#9889;</div>
+                        <a href="ho6.html"><img src="ho6.jpeg" alt="New Product 3"></a>
+                        <h3><a href="ho6.html">Maisie Lin</a></h3>
+                        <p class="price"><span class="old-price">$109.99</span> $79.99</p>
+                        <div class="rating">
+                            &#9733;&#9733;&#9733;&#9733;&#9733; (30)
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </main>
+    <script src="ho5.js"></script> <!-- External JavaScript Link -->
+    <footer>
+        <div class="footer-container">
+            <!-- Section 1: Brand Info -->
+            <div class="footer-section brand-info">
+                <h3>The Blooms Nature Intended</h3>
+                <p>At Flori Flower Shop, we believe in the pure beauty of nature. That's why our arrangements are crafted using only the freshest.</p>
+            </div>
+
+            <!-- Section 2: Product Links -->
+            <div class="footer-section">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="tulips.html">Birthdays</a></li>
+                    <li><a href="wed.html">Weddings</a></li>
+                    <li><a href="holy.html">Holidays</a></li>
+                    <li><a href="congratulations.html">Congratulations</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Company Links -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="contact.html#faq-section">FAQS</a></li>
+                    <li><a href="contact.html#email-forms">Email Forms</a></li>
+                    <li><a href="contact.html#customer-support">Customer Support</a></li>
+                    <li><a href="About.html">Our Story</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 4: Blog Links -->
+            <div class="footer-section">
+                <h3>Blog</h3>
+                <ul>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="track.html">Track through Number</a></li>
+                    <li><a href="order.html">Track through Order</a></li>
+                    <li><a href="profile.html">Manage Profiles</a></li>
+                </ul>
+            </div>
+
+            <!-- Section 5: Contact Information -->
+            <div class="footer-section">
+                <h3>Connect with us</h3>
+                <p>Email: info@flori.com</p>
+                <p>Contact: +63 998 166 7570</p>
+                <p>Main: 108 Aguirre Ave. BF Homes, Angeles City, Pampanga</p>
+                <p>Cebu: Unit 25 The Rivergate Bldg., Los Angeles, CA</p>
+                <div class="social-icons">
+                    <a href="https://www.plantshed.com/sweet-season"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.plantshed.com/sweet-season"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.plantshed.com/sweet-season"><i class="fab fa-facebook-messenger"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

@@ -1,0 +1,73 @@
+.tracking-banner {
+    background-color: #f7eeee; 
+    padding: 30px 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 3px solid #fe5275;
+}
+
+.tracking-banner h2 {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px; 
+    color: #6f323d; 
+}
+
+.tracking-number {
+    color: #fe5275;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.tracking-container {
+    padding-top: 30px; 
+    margin: 4px auto;
+    max-width: 850px; 
+    padding: 30px; 
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Table Styling */
+.tracking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.tracking-table th, .tracking-table td {
+    padding: 18px; 
+    border: 1px solid #6f323d; 
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tracking-table th {
+    background-color: #f8e0e4; 
+    font-weight: bold;
+    color: #6f323d; 
+    text-align: center;
+}
+
+.tracking-table tr:nth-child(even) {
+    background-color: #f8e0e4;
+}
+
+.tracking-table tbody tr:hover {
+    background-color: #ffeff2;
+}
+
+.tracking-table td i.check-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fe5275;
+    font-size: 26px; 
+    height: 100%; 
+}
+
+.tracking-table td {
+    color: #5a3e30; 
+}

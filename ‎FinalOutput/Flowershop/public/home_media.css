@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+.offer-item {
+    flex-basis: 50%;
+    }
+    .featured-cookies-section .cookie-container {
+    justify-content: space-between;
+    }
+    .featured-cookies-section .cookie-item {
+    width: 48%;
+    }
+    .review-container {
+    flex-direction: column;
+    align-items: center;
+    }
+    .review-item {
+    width: 100%;
+    max-width: 400px;
+    }
+    .product-card .price,
+    .product-card .discounted-price {
+    font-size: 16px;
+    }
+    .customer-reviews .review-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+      .customer-reviews .review-item {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+      }
+
+      .deal-of-the-day-section {
+        background-image: none;
+        padding: 50px 20px;
+        }
+}
+
+      
+    
+    @media screen and (max-width: 768px) {
+    .deal-of-the-day-section {
+    background-image: none;
+    padding: 50px 20px;
+    }
+    }

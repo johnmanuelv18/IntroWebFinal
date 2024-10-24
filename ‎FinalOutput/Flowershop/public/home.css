@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #880521;
+    padding: 20px 0;
+    border-bottom: 2px solid #880521;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #F05C7A;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #F05C7A;
+}
+
+header .icons a i {
+    vertical-align: middle;
+}
+
+
+/* banner */
+.hero-banner {
+    background-image: url('backgroundpo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 20px;
+    color: #333;
+}
+
+.hero-banner .hero-text h1 {
+    font-size: 48px;
+    color: #F05C7A;
+    margin-bottom: 10px;
+}
+
+.hero-banner .hero-text p {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #F05C7A;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cta-btn:hover {
+    background-color: #D04A6B;
+}
